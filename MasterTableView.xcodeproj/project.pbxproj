@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		85462581FAC7D1FCCBF889E3 /* libPods-MasterTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 376482DF03351BCB9DCEA535 /* libPods-MasterTableView.a */; };
+		EE577DF81EF41F4600E9A34D /* RootOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE577DF71EF41F4600E9A34D /* RootOptionsTableViewController.swift */; };
+		EE577DFA1EF4224C00E9A34D /* FirstSubPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE577DF91EF4224C00E9A34D /* FirstSubPageViewController.swift */; };
+		EE577DFD1EF429CC00E9A34D /* RootOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE577DFC1EF429CC00E9A34D /* RootOptionsTableViewCell.swift */; };
+		EE577DFF1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE577DFE1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift */; };
 		EE86346D1E584ECE0015BEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE86346C1E584ECE0015BEAC /* AppDelegate.swift */; };
-		EE86346F1E584ECE0015BEAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE86346E1E584ECE0015BEAC /* ViewController.swift */; };
 		EE8634721E584ECE0015BEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8634701E584ECE0015BEAC /* Main.storyboard */; };
 		EE8634741E584ECE0015BEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8634731E584ECE0015BEAC /* Assets.xcassets */; };
 		EE8634771E584ECE0015BEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8634751E584ECE0015BEAC /* LaunchScreen.storyboard */; };
@@ -18,9 +21,12 @@
 /* Begin PBXFileReference section */
 		376482DF03351BCB9DCEA535 /* libPods-MasterTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEFA110F90E8C213BF8B046 /* Pods-MasterTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterTableView/Pods-MasterTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		EE577DF71EF41F4600E9A34D /* RootOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootOptionsTableViewController.swift; sourceTree = "<group>"; };
+		EE577DF91EF4224C00E9A34D /* FirstSubPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubPageViewController.swift; sourceTree = "<group>"; };
+		EE577DFC1EF429CC00E9A34D /* RootOptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		EE577DFE1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSubPageTableViewCell.swift; sourceTree = "<group>"; };
 		EE8634691E584ECE0015BEAC /* MasterTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE86346C1E584ECE0015BEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE86346E1E584ECE0015BEAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE8634711E584ECE0015BEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE8634731E584ECE0015BEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8634761E584ECE0015BEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +63,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE577DF61EF41EF500E9A34D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE577DF71EF41F4600E9A34D /* RootOptionsTableViewController.swift */,
+				EE577DF91EF4224C00E9A34D /* FirstSubPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE577DFB1EF4299B00E9A34D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE577DFC1EF429CC00E9A34D /* RootOptionsTableViewCell.swift */,
+				EE577DFE1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EE8634601E584ECE0015BEAC = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +102,9 @@
 		EE86346B1E584ECE0015BEAC /* MasterTableView */ = {
 			isa = PBXGroup;
 			children = (
+				EE577DFB1EF4299B00E9A34D /* Views */,
+				EE577DF61EF41EF500E9A34D /* Controllers */,
 				EE86346C1E584ECE0015BEAC /* AppDelegate.swift */,
-				EE86346E1E584ECE0015BEAC /* ViewController.swift */,
 				EE8634701E584ECE0015BEAC /* Main.storyboard */,
 				EE8634731E584ECE0015BEAC /* Assets.xcassets */,
 				EE8634751E584ECE0015BEAC /* LaunchScreen.storyboard */,
@@ -212,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE86346F1E584ECE0015BEAC /* ViewController.swift in Sources */,
+				EE577DFD1EF429CC00E9A34D /* RootOptionsTableViewCell.swift in Sources */,
+				EE577DFF1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift in Sources */,
+				EE577DF81EF41F4600E9A34D /* RootOptionsTableViewController.swift in Sources */,
 				EE86346D1E584ECE0015BEAC /* AppDelegate.swift in Sources */,
+				EE577DFA1EF4224C00E9A34D /* FirstSubPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +405,7 @@
 				EE86347D1E584ECE0015BEAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
