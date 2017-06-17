@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DZK-z9-CR6" customClass="CustomRefreshControlSubView" customModule="MasterTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiR-cS-IGV">
+                    <rect key="frame" x="201" y="20" width="40" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.97166803209999997" blue="0.60117250680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="45Z-F3-Y8t"/>
+                        <constraint firstAttribute="width" secondItem="TiR-cS-IGV" secondAttribute="height" multiplier="1:1" id="rUd-eN-snH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TiR-cS-IGV" firstAttribute="height" secondItem="DZK-z9-CR6" secondAttribute="height" multiplier="0.5" priority="990" id="WcD-Ik-CVS"/>
+                <constraint firstItem="TiR-cS-IGV" firstAttribute="centerX" secondItem="DZK-z9-CR6" secondAttribute="centerX" id="WoS-IU-0FN"/>
+                <constraint firstItem="TiR-cS-IGV" firstAttribute="centerY" secondItem="DZK-z9-CR6" secondAttribute="centerY" id="cZq-oT-zoa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="refreshIndicatorView" destination="TiR-cS-IGV" id="FNd-vw-Vfv"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="-107"/>
+        </view>
+    </objects>
+</document>

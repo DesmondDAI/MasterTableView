@@ -55,11 +55,56 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="oUT-uT-zbr"/>
                     <connections>
                         <segue destination="60A-yO-Soc" kind="show" identifier="RootOptionGoToFirstSubPage" id="YA2-Xs-OIM"/>
+                        <segue destination="HoK-J2-3w0" kind="show" identifier="RootOptionGoToSecondSubPage" id="lVd-wZ-aPK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4s-ue-vGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="581.60000000000002" y="341.37931034482762"/>
+        </scene>
+        <!--Second Sub Page View Controller-->
+        <scene sceneID="G5e-rb-paB">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HoK-J2-3w0" customClass="SecondSubPageViewController" customModule="MasterTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aDP-av-SXJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sCM-jP-ZFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EIy-sU-fli">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="igM-Eo-4US">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondSubPageTableViewCell" rowHeight="60" id="ZYc-QK-cX1">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZYc-QK-cX1" id="XaR-Pz-NVY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.99382048850000004" green="0.44794863019999998" blue="0.38626483210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="igM-Eo-4US" firstAttribute="leading" secondItem="EIy-sU-fli" secondAttribute="leading" id="01g-Ni-O3i"/>
+                            <constraint firstItem="igM-Eo-4US" firstAttribute="top" secondItem="aDP-av-SXJ" secondAttribute="bottom" id="7vH-1t-FE2"/>
+                            <constraint firstItem="sCM-jP-ZFd" firstAttribute="top" secondItem="igM-Eo-4US" secondAttribute="bottom" id="N1d-c9-dws"/>
+                            <constraint firstAttribute="trailing" secondItem="igM-Eo-4US" secondAttribute="trailing" id="dkQ-ta-3oQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="igM-Eo-4US" id="QCj-qZ-ele"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjM-r0-2qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552.8" y="148.87556221889056"/>
         </scene>
         <!--First Sub Page View Controller-->
         <scene sceneID="CaN-Kb-pgp">
@@ -119,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="az1-54-ftf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="-357"/>
+            <point key="canvasLocation" x="1553" y="-538"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2jc-cb-O7k">

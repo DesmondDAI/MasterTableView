@@ -23,7 +23,7 @@ class RootOptionsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,6 +31,9 @@ class RootOptionsTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             cell.titleNameLabel.text = "UITableView上端的加载指示"
+            
+        case 1:
+            cell.titleNameLabel.text = "自定义UITableView下拉加载提示"
             
         default:
             break
@@ -44,6 +47,9 @@ class RootOptionsTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             performSegue(withIdentifier: "RootOptionGoToFirstSubPage", sender: nil)
+            
+        case 1:
+            performSegue(withIdentifier: "RootOptionGoToSecondSubPage", sender: nil)
             
         default:
             break
