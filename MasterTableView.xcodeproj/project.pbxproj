@@ -19,6 +19,7 @@
 		EE8634721E584ECE0015BEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8634701E584ECE0015BEAC /* Main.storyboard */; };
 		EE8634741E584ECE0015BEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8634731E584ECE0015BEAC /* Assets.xcassets */; };
 		EE8634771E584ECE0015BEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8634751E584ECE0015BEAC /* LaunchScreen.storyboard */; };
+		EECBC5A71EFF8DAF00D80C94 /* CorelativeUXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBC5A61EFF8DAF00D80C94 /* CorelativeUXTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EE8634731E584ECE0015BEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8634761E584ECE0015BEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE8634781E584ECE0015BEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECBC5A61EFF8DAF00D80C94 /* CorelativeUXTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorelativeUXTableViewController.swift; sourceTree = "<group>"; };
 		F774D0256AC0294E7DE04AD5 /* Pods-MasterTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterTableView/Pods-MasterTableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				EE577DF71EF41F4600E9A34D /* RootOptionsTableViewController.swift */,
 				EE577DF91EF4224C00E9A34D /* FirstSubPageViewController.swift */,
 				EE02345D1EF4D464007906A3 /* SecondSubPageViewController.swift */,
+				EECBC5A61EFF8DAF00D80C94 /* CorelativeUXTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				EE577DFD1EF429CC00E9A34D /* RootOptionsTableViewCell.swift in Sources */,
 				EE577DFF1EF42A3200E9A34D /* FirstSubPageTableViewCell.swift in Sources */,
+				EECBC5A71EFF8DAF00D80C94 /* CorelativeUXTableViewController.swift in Sources */,
 				EE02345E1EF4D464007906A3 /* SecondSubPageViewController.swift in Sources */,
 				EE0234621EF4DFEF007906A3 /* CustomRefreshControlSubView.swift in Sources */,
 				EE577DF81EF41F4600E9A34D /* RootOptionsTableViewController.swift in Sources */,

@@ -10,32 +10,32 @@ import UIKit
 
 class SecondSubPageViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+            tableView.rowHeight = UITableViewAutomaticDimension
+            tableView.estimatedRowHeight = 40.0
+            
+            customRefreshControl = UIRefreshControl()
+            customRefreshControl.backgroundColor = .clear
+            customRefreshControl.tintColor = .clear
+            customRefreshControl.addTarget(self, action: #selector(refreshControlValueChanged(_:)), for: .valueChanged)
+            tableView.addSubview(customRefreshControl)
+            loadCustomRefreshContent()
+        }
+    }
+    
     var customRefreshControl: UIRefreshControl!
     var refreshControlSubView: CustomRefreshControlSubView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         tableView.setContentOffset(CGPoint(x: 0, y: -customRefreshControl.frame.height), animated: true)
         customRefreshControl.sendActions(for: .valueChanged)
-    }
-    
-    func setupTableView() {
-        tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 40.0
-        
-        customRefreshControl = UIRefreshControl()
-        customRefreshControl.backgroundColor = .clear
-        customRefreshControl.tintColor = .clear
-        customRefreshControl.addTarget(self, action: #selector(refreshControlValueChanged(_:)), for: .valueChanged)
-        tableView.addSubview(customRefreshControl)
-        loadCustomRefreshContent()
     }
     
     func refreshControlValueChanged(_ refreshControl: UIRefreshControl) {

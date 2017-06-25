@@ -14,6 +14,7 @@ class RootOptionsTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 60.0
+        tableView.tableFooterView = UIView()
     }
 
     
@@ -23,7 +24,7 @@ class RootOptionsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +35,9 @@ class RootOptionsTableViewController: UITableViewController {
             
         case 1:
             cell.titleNameLabel.text = "自定义UITableView下拉加载提示"
+            
+        case 2:
+            cell.titleNameLabel.text = "UIScrollView联动反馈效果展示"
             
         default:
             break
@@ -50,6 +54,9 @@ class RootOptionsTableViewController: UITableViewController {
             
         case 1:
             performSegue(withIdentifier: "RootOptionGoToSecondSubPage", sender: nil)
+            
+        case 2:
+            performSegue(withIdentifier: "GoToCorelativeUXTableVC", sender: nil)
             
         default:
             break
